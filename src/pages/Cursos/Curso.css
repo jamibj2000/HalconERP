@@ -1,0 +1,83 @@
+#inicio-bg{
+  position: absolute;
+  height: 60%;
+  width: 100vw;
+  z-index: -1;
+  padding-top: 7rem;
+  background-color: #182784;
+}
+#inicio-logo{
+  width: 80px;
+}
+#portada-image{
+  width: 400px;
+}
+.navbar.inicio{
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background-color: #182784 !important;
+  
+
+}
+.nav.items-menu{
+  display:ruby-base-container;
+}
+.inicio li {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  
+}
+.items-menu li a{
+  color: white;
+  /* font-family: 'Nunito-Sans'; */
+  font-size: 18px;
+}
+.btn.inicio{
+  background-color: white;
+  border-radius: 2rem;
+  padding-left: 1rem;
+  font-size: 18px;
+  padding-right: 1rem;
+  color:#012F61;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border-color: aliceblue;
+}
+.btn.inicio:hover{
+  border-color: aliceblue;
+
+}
+.left-content{
+  padding-left: 5vw;
+padding-top: 4vh;
+}
+.right-content{
+  padding-left: 6vw;
+}
+.cards-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-text{
+  color: white;
+}
+
+.card.dimensiones{
+margin-right: 1rem;
+margin-bottom: 1rem;
+height: 8rem;
+width: 12rem;
+}
+
+/* curso */
+.cursos-container{
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
+.cursos-container .card{
+  margin-right: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  
+}

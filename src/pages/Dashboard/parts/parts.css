@@ -1,0 +1,31 @@
+
+/* MENU SIDEBAR */
+.main-menu-container::-webkit-scrollbar{
+  margin-bottom: -5% !important;
+  width: 10px;
+  height: 8px;
+  background: transparent;
+}
+.main-menu-container::-webkit-scrollbar-thumb,.card.width100  .card-body::-webkit-scrollbar-thumb{
+    background: rgba(201, 194, 243, 0.856) ;
+    border-radius: 15px;
+}
+.main-menu-container,.card.width100  .card-body{ 
+  /* fire */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(222, 222, 250, 0.788) transparent;
+  border-radius: 1rem;
+}
+
+.main-menu-container{
+  background-color: white;
+}
+.accordion-body li a{
+  font-size: 16px;
+}
+
+
+/* FORM TITLE COMPONENT */
+.form-title-component{
+  margin-bottom: 4rem;
+}

@@ -1,0 +1,314 @@
+.container{
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+}
+
+.menu{
+	width: 100px;
+	width: 200px;
+}
+.encabezado{
+    height: 10vh;
+	box-shadow: black 3px 0px 10px;
+	z-index: 4;
+	background-color: #1d3660;
+    color: #fff;
+}
+.contenedor{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 94vh;
+}
+.btn-custom{
+    cursor: pointer;
+    user-select: none;
+}
+.opcion-perfil{
+    transition: ease-out .1s;
+}
+.opcion-perfil:hover{
+    background-color: #006eb7;
+    color: #fff !important;
+    padding-left: 1rem !important;
+}
+.menu-perfil{
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    overflow: hidden;
+    animation: menuPerfilDesplegable .2s;
+    position: relative;
+}
+.menu{
+    overflow-y: scroll;
+}
+.lista-menu{  
+}
+.enlace-menu{
+    padding: .45rem;
+    transition: ease-out .08s;
+}
+.enlace-menu:hover{
+    background-color: #00a3cc;
+    color: #fff;
+}
+.subelemento-lista-menu{
+    display: none;
+    padding-left: 3rem;
+    color: #1d3660;
+}
+.principal-lista-menu{
+    padding-left: 1rem;
+    width: 100%;
+    color: #1d3660;
+}
+.module {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    position: relative;
+  }
+  .module::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    filter: opacity(.80);
+  }
+  .checkbox-perfil{
+    
+  }
+  .module-inside {
+    position: relative;
+  }
+
+  .bg-form{
+      background-color: #fff;
+      border-radius: 10px;
+  }
+
+  .form{
+        -webkit-box-shadow: 5px 5px 15px 2px #d1d1d1; 
+        box-shadow: 5px 5px 15px 2px #1b1b1ba1;
+        border-radius: 10px;
+        font-size: 1rem;
+  }
+
+  .img1-form{
+        width: 7rem;
+  }
+
+  .img2-form{
+        width: 7rem;
+  }
+
+  .btn-login{
+        background-color: #002C5F;
+        color: #fff;
+        border-radius: 5px;
+        width: 100%;
+        border: 0;
+  }
+  .btn-login:hover{
+        background-color: #006eb7;
+        color: rgb(255, 255, 255);
+        border-radius: 10px;
+        width: 100%;
+  }
+  .form-title-component{
+	  	background-color: white;
+		box-shadow: black 3px 0px 10px;
+  }
+  .form-tilte-color{
+		color: #00a3cc;
+  }
+  .select-login{
+    cursor: pointer;
+  }
+  
+  .animacion {
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: ease;
+    animation-name: animarImagen1;
+  }
+  @keyframes menuPerfilDesplegable {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+  }
+  @keyframes formAnimado {
+    0% {
+      transform: translateX(-30%);
+    }
+    80% {
+      transform: translateX(2%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes animarImagen1 {
+    0% {
+      opacity: 0;
+      transform: translateY(-10rem);
+    }
+    30% {
+      opacity: 0;
+    }
+    80% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes botonPerfilAnimation{
+      0% {
+        opacity: .5;
+        left: 0;
+      }
+      100% {
+        opacity: 1;
+        left: 100%;
+      }
+  }
+  @keyframes zoomOut {
+    0% {
+        transform: translateX(-20%);
+    }
+    50% {
+        transform: translateX(2%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+ }
+ @keyframes formAnimado {
+    0% {
+        transform: translateX(-20%);
+    }
+    50% {
+        transform: translateX(2%);
+    }
+    100% {
+        transform: translateX(0);
+    }     
+ }
+.elemento-menu{
+    transition: ease-out .1s;
+}
+#element-checkbox-principal:checked ~ .subelemento-lista-menu{
+    display: block;
+}
+#element-checkbox-secundario:checked ~ .subelemento-lista-menu{
+    display: block;
+}
+#element-checkbox-secundario-2:checked ~ .subelemento-lista-menu{
+    display: block;
+}
+#element-checkbox-secundario-3:checked ~ .subelemento-lista-menu{
+    display: block;
+}
+#element-checkbox-secundario-4:checked ~ .subelemento-lista-menu{
+    display: block;
+}
+#element-checkbox-secundario-5:checked ~ .subelemento-lista-menu{
+    display: block;
+}
+#element-checkbox-secundario-6:checked ~ .subelemento-lista-menu{
+    display: block;
+}
+.boton-perfil{
+    transition: ease-out .1s;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+.boton-perfil::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    transition: ease-out .1s;
+}
+.boton-perfil:hover{
+    background-color: #005aa6;
+}
+.boton-perfil:hover::after{
+    background: linear-gradient(to left, #00a3cc3d, transparent);
+    animation: botonPerfilAnimation 1s infinite;
+}
+#opciones-perfil{
+    display: none;
+    flex-direction: column;
+}
+.menu::-webkit-scrollbar {
+    width: 0;
+    transition: ease-out .1s;
+}
+.modal-dimensiones{
+	z-index: 99;
+	position: absolute;
+	width: 90%;
+	height: 70%;
+	top: 3%;
+	left: 2%;
+	border-radius: 1rem;
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+.form-animado{
+    animation: formAnimado .51s ease-in-out;
+}
+.dimensiones-container{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.dimensiones-content{
+    background-color: rgb(255, 251, 251);
+}
+
+.dimension-image{
+	width: 50px;
+}
+.dimensiones-items{
+	display: flex;
+	margin-top: 0.5rem;
+	margin-bottom: 3rem;
+	
+}
+.item{
+	margin: 2rem;
+	border-radius: 1rem;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+	padding: 0.6rem;
+}
+.item:focus,.item:focus-within,.item:active{
+background-color: rgb(221, 234, 246);}
+.item:hover{
+	cursor: pointer;
+}
+.dimension-selected{
+	box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+.btn .dimension{
+	float: left;
+	
+}
+hr.dimension {
+  border-top: 1px solid rgb(104, 109, 244);
+}

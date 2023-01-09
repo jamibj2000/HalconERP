@@ -1,0 +1,15 @@
+.SelectDimension {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 60vh;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.SelectDimension__options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+

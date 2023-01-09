@@ -1,0 +1,11 @@
+.dimensiones-container{
+  background-color: white;
+  width: 100%;
+  background-color: aqua;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.dimensiones-content{
+background-color: red;
+}

@@ -1,0 +1,79 @@
+#inicio-bg{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+}
+
+li .inicio:hover{
+  background-color: #080746;
+  color: rgb(255, 255, 255);
+}
+.left-content{
+  padding-left: 5vw;
+  padding-top: 4vh;
+}
+.right-content{
+  padding-left: 6vw;
+}
+.cards-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-text{
+  color: white;
+}
+.card.dimensiones{
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  height: 8rem;
+  width: 12rem;
+  cursor: pointer;
+  transition: .05s ease-in;
+  background: linear-gradient(to Bottom,white 90%, rgb(165, 165, 165));
+  position: relative;
+  overflow: hidden;
+}
+.card.dimensiones *{
+  z-index: 3;
+}
+.card.dimensiones::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to Top,rgb(165, 165, 165) 30%, transparent);
+  opacity: 1;
+  transition: .15s ease-in;
+  transform: translateX(-100%) skewX(10deg);
+}
+.card.dimensiones:hover{
+  transform: translateY(-4%);
+  background: linear-gradient(to Bottom,white 75%, rgb(125, 125, 125));
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.card.dimensiones:hover::after{
+  z-index: 2;
+  transform: translateX(0);
+  background: linear-gradient(to Top, #1d3660 5%, #01468e 35%, #005aa6 50%, #006eb7);
+}
+.card.dimensiones:hover h5{
+  color: white;
+}
+.card.dimensiones:hover h6{
+  color: #fab500;
+}
+.card-title{
+  color:#182784;
+  font-weight: 500;
+}
+.menu-opcion{
+  border: transparent 1px solid;
+  transition: .1s ease-in;
+}
+.menu-opcion:hover{
+  border-radius: 3px;
+  border: #006eb7 1px solid;
+}
